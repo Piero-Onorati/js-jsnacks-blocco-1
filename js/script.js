@@ -3,13 +3,13 @@
 /* L’utente inserisce due parole in successione, con due prompt. Il software stampa prima la parola più corta, poi la parola più lunga.
 Se uguale lunghezza dire sono uguali e stamparle entrambe.*/
 
-var firstWord = prompt('Inserisci una parola')
+var firstWord = prompt('Inserisci una parola');
 
-var secondWord = prompt('Inserisci un\'altra parola')
+var secondWord = prompt('Inserisci un\'altra parola');
 
-var lfirstWord = firstWord.length
+var lfirstWord = firstWord.length;
 
-var lsecondWord = secondWord.length
+var lsecondWord = secondWord.length;
 
 if (lfirstWord < lsecondWord) {
     document.getElementById('words').innerHTML= firstWord + '+' + secondWord;
@@ -17,7 +17,7 @@ if (lfirstWord < lsecondWord) {
     document.getElementById('words').innerHTML= secondWord + '+' + firstWord;
 }
 else{
-    document.getElementById('words').innerHTML= 'the words have the same length'
+    document.getElementById('words').innerHTML= 'the words have the same length';
 }
 
 // -----------------------------------  JSnack2  ----------------------------------------//
@@ -26,14 +26,14 @@ else{
 
 // Parte 1
 
-// var sum = 0;
+var sum = 0;
 
-// for (var i = 0; i < 5; i++) {
-//    var number = parseInt(prompt('inserisci un numero'));
-//    sum += number;
-// }
+for (var i = 0; i < 5; i++) {
+   var number = parseInt(prompt('inserisci un numero'));
+   sum += number;
+}
 
-// document.getElementById('sum1').innerHTML = sum
+document.getElementById('sum1').innerHTML = sum;
 
 // --------------------  Con WHILE ------------------------ //
 
@@ -50,16 +50,16 @@ else{
 
 // Part 2 : Only even numbers
 
-// var sum = 0;
+var sum = 0;
 
-// for (var i = 0; i <5; i++) {
-//     var number = parseInt(prompt('inserisci un numero'));
-//     if(number % 2 == 0){
-//         sum += number;
-//     }
-// }
+for (var i = 0; i <5; i++) {
+    var number = parseInt(prompt('inserisci un numero'));
+    if(number % 2 == 0){
+        sum += number;
+    }
+}
 
-// // document.getElementById('sum2').innerHTML = sum
+document.getElementById('sum2').innerHTML = sum;
 
 // --------------------  Con WHILE ------------------------ //
 
@@ -77,16 +77,16 @@ else{
 
 /* Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array */
 
-// var array = [];
+var array = [];
 
-// for (i = 0; i < 6; i++) {
-//     number = parseInt(prompt('inserisci un numero'));
-//     if(number % 2 != 0){
-//         array.push(number);
-//     }
-// }
+for (i = 0; i < 6; i++) {
+    number = parseInt(prompt('inserisci un numero'));
+    if(number % 2 != 0){
+        array.push(number);
+    }
+}
 
-// document.getElementById('array').innerHTML = array;
+document.getElementById('array').innerHTML = array;
 
 // -----------------------------------  JSnack4  ----------------------------------------//
 
@@ -110,7 +110,7 @@ if (guests.includes(utente)) {
 
 // var i = 0;
 
-// while (i<guests.length) {
+// while (i < guests.length) {
 //     if (utente == guests[i]) {
 //         invited = true;
 //     }
